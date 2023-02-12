@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 6rem;
+  background-color: rgba(255, 255, 255, 0.23);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(50px);
+  display: grid;
+  border-radius: 0 0 10rem 10rem;
+}
+nav p {
+  margin: auto;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  max-width: 80rem;
+  margin: auto;
+  padding: 0 1rem;
+}
+.container .list {
+  max-width: 35rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.container .list li {
+  transition: all 1s;
+  width: 100%;
+  border: 2px solid rgb(255, 252, 252);
+  color: #fff;
+  padding: 0.9rem;
+  border-radius: 0.5rem;
+  word-wrap: break-word;
+}
+.container .pageenumbers {
+  max-width: 30rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .pageenumbers .btns {
+  margin: 0 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .pageenumbers .btns button {
+  padding: 0.5rem 0.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.362);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(50px);
+  border-radius: 0.5rem;
+  color: rgb(236, 232, 232);
+}
+.container .pageenumbers .chevron {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #fff;
+}
+
+.active {
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+/* Project Responsive */
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 80rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 80rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 650px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
